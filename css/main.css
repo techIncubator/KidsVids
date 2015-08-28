@@ -1,0 +1,69 @@
+ #signup-button-div, #signin-button-div , #twitter-sign-in{
+	display: block;
+	background: #0099FF; /*#0099FF #19A3FF #dd4b39;*/
+	color: white;
+	width: 100%; /* 70 */
+	height: 5%;
+	border-radius: 5px;
+	/* word-wrap: break-word ;*/
+	/* text-overflow: ellipsis; */
+	/* margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	margin-top: 5%; */
+} 
+#signup-button-div:hover, #signin-button-div:hover,  #twitter-sign-in:hover {
+	background: #66C2FF;
+	cursor: hand;
+	cursor: pointer;
+}
+span.label {
+	font-weight: bold;
+}
+
+span.buttonText {
+	display: inline-block;
+	vertical-align: middle;
+ 	padding: 10px 35px 10px 35px;
+ 	font-size: 14px;
+	font-weight: bold;
+	/* Use the Roboto font that is loaded in the <head> */
+	font-family: 'Roboto', arial, sans-serif;
+}
+h2 {
+	color: #0099FF;
+}
+#container {
+	background: white;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 25%;
+	padding-top: 4%;
+	padding-left: 4%;
+	padding-right: 4%;
+	width: 50%;
+	border: 2px solid #33ADFF;
+	border-radius: 15px;
+}
+
+ #logo-div {
+	margin-left: 42%;
+} 
+/* #kidsvids-div {
+	margin-left: 41%;
+	margin-bottom: 8%;
+} */
+body {
+	background: #33ADFF;
+}
+
+.left-right-label
+{
+margin-left:30%;
+color:#0099FF;
+}
+
+table
+{
+margin-bottom:10%;
+}

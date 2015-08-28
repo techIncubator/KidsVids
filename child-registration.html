@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' href='css/child-signup.css' type='text/css' />
+	</head>
+	<body>
+		<div id="container">
+
+			<form action="add-user.php" method="post">
+
+				<div class="labels">
+					<label>Your Full Name: &nbsp &nbsp &nbsp &nbsp &nbsp <?php echo $fName;?></label>
+				</div>
+
+				<input type="hidden" id="inputFullname" name="fname" class="form-control" value="<?php echo $fName;?>">
+
+				<div class="labels">
+					<label>Your Email Address: &nbsp &nbsp  <?php echo $email;?></label>
+				</div>
+
+				<input type="hidden" id="inputEmail" name="email" class="form-control" value="<?php echo $email;?>">
+
+				<div class="labels" style="display:inline-block;">
+					<label>Please enter your Parent's Twitter ID:&nbsp</label>
+				</div>
+				<input type="text" id="inputTwitter" name="inputTwitter" class="form-control">
+				<br>
+
+				<input name="submit" type="submit" value="Sign up"/>
+
+			</form>
+		</div>
+	</body>
+</html>

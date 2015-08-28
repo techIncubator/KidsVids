@@ -1,0 +1,9 @@
+diff a/KidsVids/signup-signin.js b/KidsVids/signup-signin.js	(rejected hunks)
+@@ -3,7 +3,6 @@
+ 		'callback' : signinCallback,
+ 		'data-redirecturi' : "postmessage",
+ 		'data-accesstype' : "offline",
+-		'approval': "auto"
+ 		'approvalprompt': "auto"
+ 	};
+ 	var signupParams = {

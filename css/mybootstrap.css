@@ -1,0 +1,16 @@
+/* ul.nav.nav-pills.nav-stacked>li>a
+{
+background-color:green;
+} */
+.nav-pills>li.active>a
+{
+  background-color:#33ADFF;
+  color:white;
+}
+.nav-pills>li.active>a:hover
+{
+background-color:#85CEFF;/*#ADDEFF;*/
+color:black;
+
+}
+

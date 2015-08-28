@@ -1,0 +1,44 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker3.css">
+	<script src='//code.jquery.com/jquery-1.11.2.min.js'></script> 
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+	 <script src="js/bootstrap-datepicker.js"></script>
+
+
+</head>
+<body>
+	
+
+	<div class="input-append date" id="datepicker" data-date="02-2012" 
+         data-date-format="mm-yyyy"  data-date-autoclose="true">
+
+	 <input  type="text" readonly="readonly" name="date" >	 
+	 <span class="add-on"><i class="icon-th"></i></span>	
+
+    </div>	
+	<input type="button" id="generate" value="Generate graph">	 
+    <script type="text/javascript">
+    	$close=$("#datepicker").datepicker( {
+	    format: "mm-yyyy",
+	    viewMode: "months", 
+	    minViewMode: "months",
+		autoclose: true
+	});
+	
+	$("#generate").click(function(){
+	$data=$("#datepicker").find("input").val();
+	alert($data);
+	});
+	
+	
+	/*on('changeDate', function(ev) {
+	
+	});*/
+    </script>
+	<script>
+
+</script>
+</body>
+</html>

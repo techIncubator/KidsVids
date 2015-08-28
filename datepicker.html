@@ -1,0 +1,52 @@
+<html>
+<head>
+<link rel='stylesheet' href='css/jquery-ui.css'> 
+<style>
+ .ui-datepicker-calendar {
+    display: none;
+}
+.ui-datepicker-header, .ui-widget-header{
+	background:#66C2FF; 
+	border:#66C2FF;
+}
+#ui-datepicker-div{
+width:230px;
+}
+.ui-state-hover{
+background:#99D6FF;
+color:black;
+}
+</style>
+
+</head>
+
+<body>
+
+<label for="month">Month: </label>
+<input type="text" id="month" name="month" class="monthPicker" />
+<script src='//code.jquery.com/jquery-1.11.2.min.js'></script> 
+<script src='js/jquery-ui.js'></script> 
+
+
+<script>
+$(function() {
+ $('.monthPicker').datepicker({
+  changeMonth: true,
+  changeYear: true,
+  showButtonPanel: true,
+  dateFormat: 'MM yy'
+ }).focus(function() {
+  var thisCalendar = $(this);
+  $('.ui-datepicker-calendar').detach();
+  $('.ui-datepicker-close').click(function() {
+   var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+   var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+   thisCalendar.datepicker('setDate', new Date(year, month, 1));
+  });
+ });
+});
+
+</script>
+
+</body>
+</html>

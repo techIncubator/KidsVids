@@ -1,0 +1,9 @@
+diff a/KidsVids/apikey.js b/KidsVids/apikey.js	(rejected hunks)
+@@ -72,6 +72,7 @@
+ 
+ 		});
+ 		var title = $(this).find("a").html();
++        var url= player.getVideoUrl();
+ 		tweet(title, url);
+ 	});
+ 
