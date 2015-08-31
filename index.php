@@ -1,4 +1,4 @@
 <?php
 
-Echo("new hello");
+Echo("new hello to heroku");
 ?>
