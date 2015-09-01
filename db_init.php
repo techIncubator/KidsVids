@@ -1,4 +1,5 @@
 <?php
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 $db = false;
 $DBUSER = 'root';
 $DBPASS = 'root';
