@@ -2,7 +2,7 @@
 $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 $db = false;
 $DBUSER = 'root';
-$DBPASS = 'test_1234';
+$DBPASS = 'root';
 $DBHOST = '10.0.10.17';
 
 $DBNAME = 'kidzvideomonitor';  
